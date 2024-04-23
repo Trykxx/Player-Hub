@@ -29,11 +29,9 @@ nav{
     margin: auto;
 }
 
-nav a {
-    transition: 0.5s;
-    border-radius: 30px;
-    /* background-color: transparent; */
-    transition: background-color 0.5s ease;
+.navbar a, .nav-item {
+    transition: background-color 0.5s ease, color 0.5s ease;
+    border-radius: 25px;
     padding: 0 10px;
     font-size: 15px;
     white-space: nowrap;
@@ -41,11 +39,40 @@ nav a {
     align-items: center;
     justify-content: center;
     color: var(--white);
+    position: relative;
 }
 
-nav a:hover{
+.navbar a:hover{
     background: rgba(255, 255, 255, 0.205);
     color: var(--main-blue);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+    width: 100%;
+    top: 100%;
+    background-color: rgba(255, 255, 255, 0.205);
+    border-radius: 30px;
+}
+
+.dropdown-menu a:hover{
+    background: none;
+}
+
+.dropdown-menu span {
+    color: var(--main-blue);
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    padding: 12px 16px;
+    display: block;
 }
 
 i{
@@ -60,6 +87,72 @@ i{
 body{
     background: var(--main-grey);
 }
+
+.container {
+    display: flex;
+    width: 70%;
+    min-height: 100vh;
+    margin: auto;
+}
+
+
+.container-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.container-center {
+    flex: 2;
+    padding: 20px;
+}
+
+.post-creation,
+.time-line,
+.tendances,
+.suggestions {
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.post-creation,
+.time-line,
+.tendances,
+.suggestions h2{
+    text-align: center;
+    color: var(--main-blue);
+}
+
+.post-creation {
+    min-height: 200px;
+}
+
+.time-line {
+    min-height: 600px;
+}
+
+.suggestions {
+    min-height: 300px;
+}
+
+.tendances{
+    min-height: 500px;
+}
+
+section {
+    border: 1px solid #cecece;}
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px){
     nav a span{
