@@ -18,8 +18,10 @@
 header{
     width: 100%;
     min-height: 50px;
-    padding: 20px 0 0 50px;
+    padding: 20px 0 20px 50px;
     display: flex;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--white);
 }
 
 nav{
@@ -88,73 +90,7 @@ body{
     background: var(--main-grey);
 }
 
-.container {
-    display: flex;
-    width: 70%;
-    min-height: 100vh;
-    margin: auto;
-}
-
-
-.container-right {
-    flex: 1;
-    padding: 20px;
-}
-
-.container-center {
-    flex: 2;
-    padding: 20px;
-}
-
-.post-creation,
-.time-line,
-.tendances,
-.suggestions {
-    border: 1px solid var(--white);
-    border-radius: 10px;
-    margin-bottom: 20px;
-    padding: 20px;
-}
-
-.post-creation,
-.time-line,
-.tendances,
-.suggestions h2{
-    text-align: center;
-    color: var(--main-blue);
-}
-
-.post-creation {
-    min-height: 200px;
-}
-
-.time-line {
-    min-height: 600px;
-}
-
-.suggestions {
-    min-height: 300px;
-}
-
-.tendances{
-    min-height: 500px;
-}
-
-section {
-    border: 1px solid #cecece;}
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 870px){
     nav a span{
         display: none;
     }
@@ -167,5 +103,18 @@ section {
 
     nav{
         gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0 0 0;
+    }
+
+    .logo{
+        margin: 0;
     }
 }
