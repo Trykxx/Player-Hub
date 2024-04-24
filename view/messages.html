@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="2024 - Amit Nicolas Roig Menda" />
-    <title>Player Hub</title>
-    <link rel="shortcut icon" href="./assets/icons/icone.png" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/index.css" />
+    <title>Player-Hub/Contact</title>
+    <link rel="shortcut icon" href="../assets/icons/icone.png" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/messages.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <script src="../assets/js/main.js" defer></script>
   </head>
   <body>
     <header>
-      <a href="#">
-        <img src="./assets/img/logo-dark-mini.png" alt="Logo" class="logo" />
+      <a href="../index.html">
+        <img src="../assets/img/logo-dark-mini.png" alt="Logo" class="logo" />
       </a>
 
       <nav class="navbar">
@@ -25,7 +25,7 @@
           ><i class="fa-solid fa-bell"></i><span>Notifications</span></a
         >
         <div class="nav-item">
-          <a href="./view/forums.html"
+          <a href="./forums.html"
             ><i class="fa-solid fa-comments"></i><span>Forums</span
             ><i class="fa-solid fa-caret-down"></i
           ></a>
@@ -34,13 +34,11 @@
             <a href="">Fortnite</a>
             <a href="">Overwatch</a>
             <a href="">EAFC 24</a>
-            <a href="./view/forums.html"><span>Tous les Forums</span></a>
+            <a href=""><span>Tous les Forums</span></a>
           </div>
         </div>
-        <a href="./view/messages.html"
-          ><i class="fa-solid fa-message"></i><span>Messages</span></a
-        >
-        <a href="./view/recherche.html"
+        <a href=""><i class="fa-solid fa-message"></i><span>Messages</span></a>
+        <a href="./recherche.html"
           ><i class="fa-solid fa-magnifying-glass"></i><span>Recherche</span></a
         >
         <div class="nav-item">
@@ -60,30 +58,28 @@
     </header>
 
     <div class="container">
-      <div class="container-center">
-        <section class="post-creation">
-          <h2>Ecris ton post</h2>
-          <input type="text" placeholder="Quoi de neuf ?" class="input-text" />
-        </section>
-
-        <section class="time-line">
-          <h2>Fil d'actualité</h2>
-        </section>
-      </div>
-
-      <div class="container-right">
+      <section class="users-container">
+        <div class="container-header">
+          <h2>Messages</h2>
+          <div id="new-message-icon">
+            <a href=""><i class="fa-solid fa-envelope-open"></i></a>
+          </div>
+        </div>
         <div class="search-box">
           <i class="fa-solid fa-magnifying-glass search-icon"></i>
           <input type="text" class="search-input" placeholder="Chercher" />
         </div>
 
-        <section class="suggestions">
-          <h2>Suggestions</h2>
-        </section>
-        <section class="tendances">
-          <h2>Tendances</h2>
-        </section>
-      </div>
+        <div id="user-conv"></div>
+        <div id="user-conv"></div>
+        <div id="user-conv"></div>
+        <div id="user-conv"></div>
+        <div id="user-conv"></div>
+        <div id="user-conv"></div>
+        <div id="user-conv"></div>
+      </section>
+
+      <section id="msg-container"></section>
     </div>
   </body>
 </html>

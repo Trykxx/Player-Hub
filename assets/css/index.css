@@ -19,7 +19,7 @@
 .time-line,
 .tendances,
 .suggestions {
-    border: 1px solid var(--white);
+    border: 1px solid var(--cl-text);
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 20px;
@@ -30,7 +30,7 @@
 .tendances,
 .suggestions h2{
     text-align: center;
-    color: var(--main-blue);
+    color: var(--cl-title);
 }
 
 .post-creation {
@@ -57,10 +57,10 @@
 .search-input {
     padding-left: 40px;
     height: 35px;
-    border: 1px solid var(--white);
+    border: 1px solid var(--cl-text);
     border-radius: 10px;
     background: transparent;
-    color: var(--white);
+    color: var(--cl-text);
     width: 100%;
 }
 
@@ -69,6 +69,16 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%); /* Ajuste précisément l'icône au centre vertical */
-    color: var(--white);
+    color: var(--cl-text);
     font-size: 20px;
+}
+
+@media screen and (max-width:870px){
+    .container-right{
+        display: none;
+    }
+
+    .container{
+        width: 80%;
+    }
 }

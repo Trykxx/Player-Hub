@@ -1,0 +1,28 @@
+.search-box{
+    display: flex;
+    justify-content: center;
+}
+
+.search-icon{
+    position: absolute;
+}
+
+.search-input{
+    position: relative;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+
+}
+
+.suggestions-container{
+    flex: 1;
+    border: 1px solid var(--cl-title);
+}
+
+.tendances-container{
+    flex: 2;
+    border: 1px solid var(--cl-title);
+}

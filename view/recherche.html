@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="2024 - Amit Nicolas Roig Menda" />
-    <title>Player Hub</title>
-    <link rel="shortcut icon" href="./assets/icons/icone.png" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/index.css" />
+    <title>Player-Hub / Recherche</title>
+    <link rel="shortcut icon" href="../assets/icons/icone.png" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/recherche.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -16,7 +15,7 @@
   <body>
     <header>
       <a href="#">
-        <img src="./assets/img/logo-dark-mini.png" alt="Logo" class="logo" />
+        <img src="../assets/img/logo-dark-mini.png" alt="Logo" class="logo" />
       </a>
 
       <nav class="navbar">
@@ -59,31 +58,18 @@
       </nav>
     </header>
 
+    <div class="search-box">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <input type="text" class="search-input" placeholder="Chercher" />
+    </div>
+
     <div class="container">
-      <div class="container-center">
-        <section class="post-creation">
-          <h2>Ecris ton post</h2>
-          <input type="text" placeholder="Quoi de neuf ?" class="input-text" />
-        </section>
-
-        <section class="time-line">
-          <h2>Fil d'actualité</h2>
-        </section>
-      </div>
-
-      <div class="container-right">
-        <div class="search-box">
-          <i class="fa-solid fa-magnifying-glass search-icon"></i>
-          <input type="text" class="search-input" placeholder="Chercher" />
-        </div>
-
-        <section class="suggestions">
-          <h2>Suggestions</h2>
-        </section>
-        <section class="tendances">
-          <h2>Tendances</h2>
-        </section>
-      </div>
+      <section class="tendances-container">
+        <h2>Tendances</h2>
+      </section>
+      <section class="suggestions-container">
+        <h2>Suggestions</h2>
+      </section>
     </div>
   </body>
 </html>
