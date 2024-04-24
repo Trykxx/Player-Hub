@@ -4,7 +4,7 @@ h1{
     margin-bottom: 50px;
 }
 
-.game-card{
+/* .game-card{
     border: 1px solid var(--cl-title);
     height: 400px;
     width: 250px;
@@ -12,14 +12,13 @@ h1{
     flex-direction: column;
     align-items: center;
     position: relative;
-    /* margin: 10px; */
 }
 
 .card-content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px; /* Ajoutez un peu de marge autour du contenu */
+    padding: 20px;
 }
 
 .card-content h4 {
@@ -51,4 +50,62 @@ h1{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+} */
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-around;
 }
+.game-card {
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 250px;
+    border-radius: 5px;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  .game-card:hover {
+    box-shadow: 0 8px 16px 0 #4564ff6e;
+  }
+
+  .game-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .game-card-container {
+    padding: 2px 16px;
+    color: var(--cl-text);
+  }
+
+  .game-card-title {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+
+  .game-card-button {
+    color: var(--cl-title);
+    padding: 10px 24px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid var(--cl-title);
+    transition: background-color 0.5s ease;
+  }
+
+  .game-card-button:hover {
+    background-color: var(--cl-title);
+    color: var(--cl-text);
+    cursor: pointer;
+  }
