@@ -12,6 +12,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <script src="assets/js/main.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <header>
@@ -48,8 +51,8 @@
             ><i class="fa-solid fa-user"></i><span>Profil</span
             ><i class="fa-solid fa-caret-down"></i
           ></a>
-          <div class="dropdown-menu">
-            <a href="">Connexion</a>
+          <div class="dropdown-menu" id="dropdown-menu-profil">
+            <a href="" id="connexion-btn">Connexion</a>
             <a href="">Créer un Compte</a>
             <a href="">Réglages</a>
             <a href="">Signets</a>
@@ -58,6 +61,20 @@
         </div>
       </nav>
     </header>
+
+    <div id="connexion-container" class="connexion-container hidden">
+
+      <form class="connexion-form">
+          <label for="email">Email :</label>
+      <input type="text" id="email" placeholder="Votre adresse e-mail">
+
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" placeholder="Votre mot de passe">
+
+      <input class="btn-submit" type="submit" value="Connectez-vous">
+      </form>
+
+    </div>
 
     <div class="container">
       <div class="container-center">
@@ -85,5 +102,10 @@
         </section>
       </div>
     </div>
+
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>

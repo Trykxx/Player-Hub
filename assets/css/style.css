@@ -90,6 +90,49 @@ body{
     background: var(--bg-grey);
 }
 
+.connexion-container{
+    min-height: 300px;
+    right: 0;
+    top: 30%;
+    width: 30%;
+    background-color: rgb(75, 75, 75);
+    position: absolute;
+    z-index: 10;
+    color: var(--cl-text);
+    border-radius: 10px;
+}
+
+.visible {
+    display: block !important;
+}
+
+.hidden {
+    display: none;
+}
+.connexion-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.connexion-form input{
+    padding: 10px;
+    background:transparent ;
+    border: 1px solid var(--cl-text);
+    border-radius: 10px;
+    color: var(--cl-text);
+}
+
+.btn-submit{
+    color: var(--cl-text);
+}
+
+.btn-submit:hover{
+    background: var(--cl-title);
+    cursor: pointer;
+}
+
+
 @media screen and (max-width: 1050px){
     nav a span{
         display: none;

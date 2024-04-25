@@ -25,4 +25,5 @@
 .tendances-container{
     flex: 2;
     border: 1px solid var(--cl-title);
+    height: 300px;
 }
