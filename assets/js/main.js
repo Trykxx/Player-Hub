@@ -13,5 +13,6 @@ const divConnexionTarget = document.querySelector("#connexion-container")
 connexionBtnTarget.addEventListener('click', function(e){
     e.preventDefault()
     divConnexionTarget.classList.toggle('visible')
+    divConnexionTarget.classList.toggle('hidden');
 })
 

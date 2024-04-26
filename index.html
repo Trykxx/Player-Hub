@@ -13,8 +13,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <script src="assets/js/main.js" defer></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <header>
@@ -61,51 +59,53 @@
         </div>
       </nav>
     </header>
-
-    <div id="connexion-container" class="connexion-container hidden">
-
-      <form class="connexion-form">
+    <main class="main-content">
+      <div id="connexion-container" class="connexion-container hidden">
+        <form class="connexion-form">
           <label for="email">Email :</label>
-      <input type="text" id="email" placeholder="Votre adresse e-mail">
+          <input type="text" id="email" placeholder="Votre adresse e-mail" />
 
-      <label for="password">Mot de passe :</label>
-      <input type="password" id="password" placeholder="Votre mot de passe">
+          <label for="password">Mot de passe :</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Votre mot de passe"
+          />
 
-      <input class="btn-submit" type="submit" value="Connectez-vous">
-      </form>
-
-    </div>
-
-    <div class="container">
-      <div class="container-center">
-        <section class="post-creation">
-          <h2>Ecris ton post</h2>
-          <input type="text" placeholder="Quoi de neuf ?" class="input-text" />
-        </section>
-
-        <section class="time-line">
-          <h2>Fil d'actualité</h2>
-        </section>
+          <input class="btn-submit" type="submit" value="Connectez-vous" />
+        </form>
       </div>
 
-      <div class="container-right">
-        <div class="search-box">
-          <i class="fa-solid fa-magnifying-glass search-icon"></i>
-          <input type="text" class="search-input" placeholder="Chercher" />
+      <div class="container">
+        <div class="container-center">
+          <section class="post-creation">
+            <h2>Ecris ton post</h2>
+            <input
+              type="text"
+              placeholder="Quoi de neuf ?"
+              class="input-text"
+            />
+          </section>
+
+          <section class="time-line">
+            <h2>Fil d'actualité</h2>
+          </section>
         </div>
 
-        <section class="suggestions">
-          <h2>Suggestions</h2>
-        </section>
-        <section class="tendances">
-          <h2>Tendances</h2>
-        </section>
+        <div class="container-right">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" class="search-input" placeholder="Chercher" />
+          </div>
+
+          <section class="suggestions">
+            <h2>Suggestions</h2>
+          </section>
+          <section class="tendances">
+            <h2>Tendances</h2>
+          </section>
+        </div>
       </div>
-    </div>
-
-    <script>
-      AOS.init();
-    </script>
-
+    </main>
   </body>
 </html>

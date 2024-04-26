@@ -90,16 +90,42 @@ body{
     background: var(--bg-grey);
 }
 
-.connexion-container{
+/*
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+} */
+
+/* body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 1;
+} */
+
+.connexion-container {
     min-height: 300px;
-    right: 0;
-    top: 30%;
     width: 30%;
-    background-color: rgb(75, 75, 75);
-    position: absolute;
+    background-color: rgba(75, 75, 75);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 10;
-    color: var(--cl-text);
     border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cl-text);
 }
 
 .visible {
@@ -107,27 +133,28 @@ body{
 }
 
 .hidden {
-    display: none;
+    display: none ;
 }
-.connexion-form{
+
+.connexion-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.connexion-form input{
+.connexion-form input {
     padding: 10px;
-    background:transparent ;
+    background: transparent;
     border: 1px solid var(--cl-text);
     border-radius: 10px;
     color: var(--cl-text);
 }
 
-.btn-submit{
+.btn-submit {
     color: var(--cl-text);
 }
 
-.btn-submit:hover{
+.btn-submit:hover {
     background: var(--cl-title);
     cursor: pointer;
 }
