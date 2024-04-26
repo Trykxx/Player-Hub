@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Player-Hub / Recherche</title>
-    <link rel="shortcut icon" href="../assets/icons/icone.png" />
+    <link rel="shortcut icon" href="./assets/icons/icone.png" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/recherche.css" />
+    <script src="../assets/js/main.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -24,7 +25,7 @@
           ><i class="fa-solid fa-bell"></i><span>Notifications</span></a
         >
         <div class="nav-item">
-          <a href="./view/forums.html"
+          <a href="./forums.html"
             ><i class="fa-solid fa-comments"></i><span>Forums</span
             ><i class="fa-solid fa-caret-down"></i
           ></a>
@@ -33,10 +34,10 @@
             <a href="">Fortnite</a>
             <a href="">Overwatch</a>
             <a href="">EAFC 24</a>
-            <a href="forums.html"><span>Tous les Forums</span></a>
+            <a href="./forums.html"><span>Tous les Forums</span></a>
           </div>
         </div>
-        <a href="messages.html"
+        <a href="./messages.html"
           ><i class="fa-solid fa-message"></i><span>Messages</span></a
         >
         <a href="#"
@@ -48,7 +49,7 @@
             ><i class="fa-solid fa-caret-down"></i
           ></a>
           <div class="dropdown-menu">
-            <a href="">Connexion</a>
+            <a href="" id="connexion-btn">Connexion</a>
             <a href="">Créer un Compte</a>
             <a href="">Réglages</a>
             <a href="">Signets</a>
@@ -57,19 +58,33 @@
         </div>
       </nav>
     </header>
+    <main id="main-content">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" class="search-input" placeholder="Chercher" />
+      </div>
 
-    <div class="search-box">
-      <i class="fa-solid fa-magnifying-glass search-icon"></i>
-      <input type="text" class="search-input" placeholder="Chercher" />
-    </div>
+      <div class="container">
+        <section class="tendances-container">
+          <h2>Tendances</h2>
+        </section>
+        <section class="suggestions-container">
+          <h2>Suggestions</h2>
+        </section>
+      </div>
+    </main>
+    <div id="connexion-container" class="connexion-container hidden">
+      <h2>Connexion</h2>
+      <a href=""><i class="fa-solid fa-xmark close-icon"></i></a>
+      <form class="connexion-form">
+        <label for="email">Email :</label>
+        <input type="text" id="email" placeholder="Votre adresse e-mail" />
 
-    <div class="container">
-      <section class="tendances-container">
-        <h2>Tendances</h2>
-      </section>
-      <section class="suggestions-container">
-        <h2>Suggestions</h2>
-      </section>
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" placeholder="Votre mot de passe" />
+
+        <input class="btn-submit" type="submit" value="Connectez-vous" />
+      </form>
     </div>
   </body>
 </html>

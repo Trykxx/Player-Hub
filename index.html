@@ -7,12 +7,12 @@
     <title>Player Hub</title>
     <link rel="shortcut icon" href="./assets/icons/icone.png" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <script src="assets/js/main.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
   </head>
   <body>
     <header>
@@ -59,32 +59,17 @@
         </div>
       </nav>
     </header>
-    <main class="main-content">
-      <div id="connexion-container" class="connexion-container hidden">
-        <form class="connexion-form">
-          <label for="email">Email :</label>
-          <input type="text" id="email" placeholder="Votre adresse e-mail" />
-
-          <label for="password">Mot de passe :</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="Votre mot de passe"
-          />
-
-          <input class="btn-submit" type="submit" value="Connectez-vous" />
-        </form>
-      </div>
-
+    <!-- TODO Remplir chaque section -->
+    <main id="main-content">
       <div class="container">
         <div class="container-center">
           <section class="post-creation">
             <h2>Ecris ton post</h2>
-            <input
+            <!-- <input
               type="text"
               placeholder="Quoi de neuf ?"
               class="input-text"
-            />
+            /> -->
           </section>
 
           <section class="time-line">
@@ -107,5 +92,18 @@
         </div>
       </div>
     </main>
+    <div id="connexion-container" class="connexion-container hidden">
+      <h2>Connexion</h2>
+      <a href=""><i class="fa-solid fa-xmark close-icon"></i></a>
+      <form class="connexion-form">
+        <label for="email">Email :</label>
+        <input type="text" id="email" placeholder="Votre adresse e-mail" />
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" placeholder="Votre mot de passe" />
+
+        <input class="btn-submit" type="submit" value="Connectez-vous" />
+      </form>
+    </div>
   </body>
 </html>
