@@ -101,7 +101,7 @@ h1{
     text-decoration: none;
     font-weight: bold;
     border: 1px solid var(--cl-title);
-    transition: background-color 0.5s ease;
+    /* transition: background-color 0.5s ease; */
   }
 
   .game-card-button:hover {
