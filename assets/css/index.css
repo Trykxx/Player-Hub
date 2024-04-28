@@ -1,84 +1,84 @@
 .container {
-    display: flex;
-    width: 70%;
-    min-height: 100vh;
-    margin: auto;
+  display: flex;
+  width: 70%;
+  min-height: 100vh;
+  margin: auto;
 }
 
 .container-right {
-    flex: 1;
-    padding: 20px;
+  flex: 1;
+  padding: 20px;
 }
 
 .container-center {
-    flex: 2;
-    padding: 20px;
+  flex: 2;
+  padding: 20px;
 }
 
 .post-creation,
 .time-line,
 .tendances,
 .suggestions {
-    border: 1px solid var(--cl-text);
-    border-radius: 10px;
-    margin-bottom: 20px;
-    padding: 20px;
+  border: 1px solid var(--cl-text);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .post-creation,
 .time-line,
 .tendances,
-.suggestions h2{
-    text-align: center;
-    color: var(--cl-title);
+.suggestions h2 {
+  text-align: center;
+  color: var(--cl-title);
 }
 
 .post-creation {
-    min-height: 200px;
+  min-height: 200px;
 }
 
 .time-line {
-    min-height: 600px;
+  min-height: 100vh;
 }
 
 .suggestions {
-    min-height: 300px;
+  min-height: 300px;
 }
 
-.tendances{
-    min-height: 500px;
+.tendances {
+  min-height: 500px;
 }
 
 .search-box {
-    position: relative; /* Permet un positionnement absolu de l'icône à l'intérieur */
-    margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .search-input {
-    padding-left: 40px;
-    height: 35px;
-    border: 1px solid var(--cl-text);
-    border-radius: 10px;
-    background: transparent;
-    color: var(--cl-text);
-    width: 100%;
+  padding-left: 40px;
+  height: 35px;
+  border: 1px solid var(--cl-text);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--cl-text);
+  width: 100%;
 }
 
 .search-icon {
-    position: absolute; /* Positionne l'icône par rapport à son parent */
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%); /* Ajuste précisément l'icône au centre vertical */
-    color: var(--cl-text);
-    font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--cl-text);
+  font-size: 20px;
 }
 
-@media screen and (max-width:870px){
-    .container-right{
-        display: none;
-    }
+@media screen and (max-width: 870px) {
+  .container-right {
+    display: none;
+  }
 
-    .container{
-        width: 80%;
-    }
+  .container {
+    width: 80%;
+  }
 }

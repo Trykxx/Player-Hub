@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/forums.css" />
+    <script src="../assets/js/main.js" defer></script>
   </head>
   <body>
     <header>
@@ -48,7 +49,7 @@
             ><i class="fa-solid fa-caret-down"></i
           ></a>
           <div class="dropdown-menu">
-            <a href="">Connexion</a>
+            <a href="" id="connexion-btn">Connexion</a>
             <a href="">Créer un Compte</a>
             <a href="">Réglages</a>
             <a href="">Signets</a>
@@ -58,205 +59,69 @@
       </nav>
     </header>
 
-    <h1>Forums</h1>
+    <main class="container" id="main-content">
+      <h1>Forums</h1>
 
-    <main class="container">
-      <!-- <section class="cards-container">
-        <article class="game-card">
-          <figure>
-            <img
-              src="../assets/img/pexels-okiine-2381761-18374878.jpg"
-              alt=""
-            />
-            <div class="card-content">
-              <h4>Call of Duty</h4>
-              <a href="">Explorer le forum</a>
-            </div>
-          </figure>
-        </article>
-        <article class="game-card">
-          <figure>
-            <img
-              src="../assets/img/pexels-okiine-2381761-18374878.jpg"
-              alt=""
-            />
-            <div class="card-content">
-              <h4>Call of Duty</h4>
-              <a href="">Explorer le forum</a>
-            </div>
-          </figure>
-        </article>
-        <article class="game-card">
-          <figure>
-            <img
-              src="../assets/img/pexels-okiine-2381761-18374878.jpg"
-              alt=""
-            />
-            <div class="card-content">
-              <h4>Call of Duty</h4>
-              <a href="">Explorer le forum</a>
-            </div>
-          </figure>
-        </article>
-        <article class="game-card">
-          <figure>
-            <img
-              src="../assets/img/pexels-okiine-2381761-18374878.jpg"
-              alt=""
-            />
-            <div class="card-content">
-              <h4>Call of Duty</h4>
-              <a href="">Explorer le forum</a>
-            </div>
-          </figure>
-        </article>
-        <article class="game-card">
-          <figure>
-            <img
-              src="../assets/img/pexels-okiine-2381761-18374878.jpg"
-              alt=""
-            />
-            <div class="card-content">
-              <h4>Call of Duty</h4>
-              <a href="">Explorer le forum</a>
-            </div>
-          </figure>
-        </article>
-        <article class="game-card">
-          <figure>
-            <img
-              src="../assets/img/pexels-okiine-2381761-18374878.jpg"
-              alt=""
-            />
-            <div class="card-content">
-              <h4>Call of Duty</h4>
-              <a href="">Explorer le forum</a>
-            </div>
-          </figure>
-        </article>
-        <article class="game-card">
-          <figure>
-            <img
-              src="../assets/img/pexels-okiine-2381761-18374878.jpg"
-              alt=""
-            />
-            <div class="card-content">
-              <h4>Call of Duty</h4>
-              <a href="">Explorer le forum</a>
-            </div>
-          </figure>
-        </article>
-        <article class="game-card">
-          <figure>
-            <img
-              src="../assets/img/pexels-okiine-2381761-18374878.jpg"
-              alt=""
-            />
-            <div class="card-content">
-              <h4>Call of Duty</h4>
-              <a href="">Explorer le forum</a>
-            </div>
-          </figure>
-        </article>
-        <article class="game-card">
-          <figure>
-            <img
-              src="../assets/img/pexels-okiine-2381761-18374878.jpg"
-              alt=""
-            />
-            <div class="card-content">
-              <h4>Call of Duty</h4>
-              <a href="">Explorer le forum</a>
-            </div>
-          </figure>
-        </article>
-        <article class="game-card">
-          <figure>
-            <img
-              src="../assets/img/pexels-okiine-2381761-18374878.jpg"
-              alt=""
-            />
-            <div class="card-content">
-              <h4>Call of Duty</h4>
-              <a href="">Explorer le forum</a>
-            </div>
-          </figure>
-        </article>
-        <article class="game-card">
-          <figure>
-            <img
-              src="../assets/img/pexels-okiine-2381761-18374878.jpg"
-              alt=""
-            />
-            <div class="card-content">
-              <h4>Call of Duty</h4>
-              <a href="">Explorer le forum</a>
-            </div>
-          </figure>
-        </article>
-        <article class="game-card">
-          <figure>
-            <img
-              src="../assets/img/pexels-okiine-2381761-18374878.jpg"
-              alt=""
-            />
-            <div class="card-content">
-              <h4>Call of Duty</h4>
-              <a href="">Explorer le forum</a>
-            </div>
-          </figure>
-        </article>
-        <article class="game-card">
-          <figure>
-            <img
-              src="../assets/img/pexels-okiine-2381761-18374878.jpg"
-              alt=""
-            />
-            <div class="card-content">
-              <h4>Call of Duty</h4>
-              <a href="">Explorer le forum</a>
-            </div>
-          </figure>
-        </article>
-      </section> -->
-<section class="cards-container">
+      <section class="cards-container">
+        <div class="game-card">
+          <img src="../assets/img/cod.avif" alt="Image de Call of Duty" />
+          <div class="game-card-container">
+            <div class="game-card-title">Call of Duty</div>
+            <a href="lien_vers_forum_du_jeu" class="game-card-button"
+              >Explorer le forum</a
+            >
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="../assets/img/fortnite.jpg" alt="Fortnite" />
+          <div class="game-card-container">
+            <div class="game-card-title">Fortnite</div>
+            <a href="lien_vers_forum_du_jeu" class="game-card-button"
+              >Explorer le forum</a
+            >
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="../assets/img/Overwatch_2.webp" alt="Overwatch" />
+          <div class="game-card-container">
+            <div class="game-card-title">Overwatch</div>
+            <a href="lien_vers_forum_du_jeu" class="game-card-button"
+              >Explorer le forum</a
+            >
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="../assets/img/eafc.avif" alt="EAFC 24" />
+          <div class="game-card-container">
+            <div class="game-card-title">EAFC 24</div>
+            <a href="lien_vers_forum_du_jeu" class="game-card-button"
+              >Explorer le forum</a
+            >
+          </div>
+        </div>
+        <div class="game-card">
+          <img src="../assets/img/lol.jpeg" alt="League of Legends" />
+          <div class="game-card-container">
+            <div class="game-card-title">League of Legends</div>
+            <a href="lien_vers_forum_du_jeu" class="game-card-button"
+              >Explorer le forum</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="connexion-container" class="connexion-container hidden">
+      <h2>Connexion</h2>
+      <a href=""><i class="fa-solid fa-xmark close-icon"></i></a>
+      <form class="connexion-form">
+        <label for="email">Email :</label>
+        <input type="text" id="email" placeholder="Votre adresse e-mail" />
 
-  <div class="game-card">
-    <img src="../assets/img/cod.avif" alt="Image de Call of Duty">
-    <div class="game-card-container">
-      <div class="game-card-title">Call of Duty</div>
-      <a href="lien_vers_forum_du_jeu" class="game-card-button">Explorer le forum</a>
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" placeholder="Votre mot de passe" />
+
+        <input class="btn-submit" type="submit" value="Connectez-vous" />
+      </form>
     </div>
-  </div>
-  <div class="game-card">
-    <img src="../assets/img/fortnite.jpg" alt="Fortnite">
-    <div class="game-card-container">
-      <div class="game-card-title">Fortnite</div>
-      <a href="lien_vers_forum_du_jeu" class="game-card-button">Explorer le forum</a>
-    </div>
-  </div>
-  <div class="game-card">
-    <img src="../assets/img/Overwatch_2.webp" alt="Overwatch">
-    <div class="game-card-container">
-      <div class="game-card-title">Overwatch</div>
-      <a href="lien_vers_forum_du_jeu" class="game-card-button">Explorer le forum</a>
-    </div>
-  </div>
-  <div class="game-card">
-    <img src="../assets/img/eafc.avif" alt="EAFC 24">
-    <div class="game-card-container">
-      <div class="game-card-title">EAFC 24</div>
-      <a href="lien_vers_forum_du_jeu" class="game-card-button">Explorer le forum</a>
-    </div>
-  </div>
-  <div class="game-card">
-    <img src="../assets/img/lol.jpeg" alt="League of Legends">
-    <div class="game-card-container">
-      <div class="game-card-title">League of Legends</div>
-      <a href="lien_vers_forum_du_jeu" class="game-card-button">Explorer le forum</a>
-    </div>
-  </div>
-</section>
-</main>
-</body>
+  </body>
 </html>

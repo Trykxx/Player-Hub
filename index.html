@@ -7,11 +7,12 @@
     <title>Player Hub</title>
     <link rel="shortcut icon" href="./assets/icons/icone.png" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <script src="./assets/js/main.js" defer></script>
   </head>
   <body>
     <header>
@@ -20,8 +21,8 @@
       </a>
 
       <nav class="navbar">
-        <a href=""><i class="fa-solid fa-user-group"></i><span>Social</span></a>
-        <a href=""
+        <a href="./view/social.html"><i class="fa-solid fa-user-group"></i><span>Social</span></a>
+        <a href="./view/notifications.html"
           ><i class="fa-solid fa-bell"></i><span>Notifications</span></a
         >
         <div class="nav-item">
@@ -44,12 +45,12 @@
           ><i class="fa-solid fa-magnifying-glass"></i><span>Recherche</span></a
         >
         <div class="nav-item">
-          <a href=""
+          <a href="./view/profil.html"
             ><i class="fa-solid fa-user"></i><span>Profil</span
             ><i class="fa-solid fa-caret-down"></i
           ></a>
-          <div class="dropdown-menu">
-            <a href="">Connexion</a>
+          <div class="dropdown-menu" id="dropdown-menu-profil">
+            <a href="" id="connexion-btn">Connexion</a>
             <a href="">Créer un Compte</a>
             <a href="">Réglages</a>
             <a href="">Signets</a>
@@ -58,32 +59,51 @@
         </div>
       </nav>
     </header>
+    <!-- TODO Remplir chaque section -->
+    <main id="main-content">
+      <div class="container">
+        <div class="container-center">
+          <section class="post-creation">
+            <h2>Ecris ton post</h2>
+            <!-- <input
+              type="text"
+              placeholder="Quoi de neuf ?"
+              class="input-text"
+            /> -->
+          </section>
 
-    <div class="container">
-      <div class="container-center">
-        <section class="post-creation">
-          <h2>Ecris ton post</h2>
-          <input type="text" placeholder="Quoi de neuf ?" class="input-text" />
-        </section>
-
-        <section class="time-line">
-          <h2>Fil d'actualité</h2>
-        </section>
-      </div>
-
-      <div class="container-right">
-        <div class="search-box">
-          <i class="fa-solid fa-magnifying-glass search-icon"></i>
-          <input type="text" class="search-input" placeholder="Chercher" />
+          <section class="time-line">
+            <h2>Fil d'actualité</h2>
+          </section>
         </div>
 
-        <section class="suggestions">
-          <h2>Suggestions</h2>
-        </section>
-        <section class="tendances">
-          <h2>Tendances</h2>
-        </section>
+        <div class="container-right">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" class="search-input" placeholder="Chercher" />
+          </div>
+
+          <section class="suggestions">
+            <h2>Suggestions</h2>
+          </section>
+          <section class="tendances">
+            <h2>Tendances</h2>
+          </section>
+        </div>
       </div>
+    </main>
+    <div id="connexion-container" class="connexion-container hidden">
+      <h2>Connexion</h2>
+      <a href=""><i class="fa-solid fa-xmark close-icon"></i></a>
+      <form class="connexion-form">
+        <label for="email">Email :</label>
+        <input type="text" id="email" placeholder="Votre adresse e-mail" />
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" placeholder="Votre mot de passe" />
+
+        <input class="btn-submit" type="submit" value="Connectez-vous" />
+      </form>
     </div>
   </body>
 </html>
