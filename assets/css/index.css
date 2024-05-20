@@ -12,7 +12,6 @@
 
 .container-center {
   flex: 2;
-  padding: 20px;
 }
 
 .post-creation,
@@ -35,6 +34,7 @@
 
 .post-creation {
   min-height: 200px;
+  position: relative;
 }
 
 .time-line {
@@ -54,9 +54,6 @@
   margin-bottom: 20px;
 }
 
-.search-input:focus{
-  border: 1px solid var(--cl-title) !important;
-}
 
 .search-input {
   padding-left: 40px;
@@ -68,6 +65,10 @@
   width: 100%;
 }
 
+.search-input:focus{
+  border: 1px solid var(--cl-title) !important;
+}
+
 .search-icon {
   position: absolute;
   left: 0;
@@ -76,6 +77,34 @@
   color: var(--cl-text);
   font-size: 20px;
 }
+
+.post-input{
+  width: 80%;
+  min-height: 100px;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 10px;
+  resize: none;
+}
+
+.pp-post{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 50%;
+
+}
+
+
+
+
+
+
 
 @media screen and (max-width: 870px) {
   .container-right {
