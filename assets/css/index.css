@@ -94,14 +94,32 @@
   position: absolute;
   left: 0;
   top: 0;
-  padding: 20px;
+  margin: 20px;
   background-color: white;
   border-radius: 50%;
-
 }
 
+.post-btn{
+  all: unset;
+  padding: 10px;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: large;
+}
 
+.post-btn:hover{
+  color: var(--cl-text);
+  background: var(--cl-title);
+  border: 1px solid var(--cl-title);
+  transition: 0.5s ease;
+}
 
+.icon-img{
+  top: 0;
+  left: 0;
+}
 
 
 

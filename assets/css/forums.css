@@ -60,5 +60,5 @@ h1 {
   background-color: var(--cl-title);
   color: var(--cl-text);
   cursor: pointer;
-  color: red; /* A supprimer */
+  color: red;
 }
