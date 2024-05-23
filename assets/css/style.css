@@ -33,8 +33,7 @@ nav {
 
 .navbar a,
 .nav-item {
-  transition: background-color 0.5s ease, color 0.5s ease;
-  border-radius: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease;
   padding: 0 10px;
   font-size: 15px;
   white-space: nowrap;
@@ -46,7 +45,6 @@ nav {
 }
 
 .navbar a:hover {
-  background: rgba(255, 255, 255, 0.205);
   color: var(--cl-title);
 }
 
@@ -55,18 +53,26 @@ nav {
   position: absolute;
   background-color: transparent;
   z-index: 1;
-  width: 100%;
+  min-width: 100%;
+  min-height: 100px;
   top: 100%;
-  background-color: rgba(255, 255, 255, 0.205);
-  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  color: #333;
 }
 
+.dropdown-menu a {
+  color: #333;
+}
+.all-forums {
+  color: var(--cl-text);
+  background-color: #4564ff;
+}
+.all-forums span{
+  color: var(--cl-text);
+}
 .dropdown-menu a:hover {
-  background: none;
-}
-
-.dropdown-menu span {
-  color: var(--cl-title);
+  background-color: #4564ff;
+  color: var(--cl-text);
 }
 
 .nav-item:hover .dropdown-menu {

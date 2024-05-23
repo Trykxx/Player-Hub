@@ -113,7 +113,7 @@
   color: var(--cl-text);
   background: var(--cl-title);
   border: 1px solid var(--cl-title);
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 
 .icon-img{
