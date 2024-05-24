@@ -58,6 +58,7 @@ nav {
   top: 100%;
   background-color: rgb(255, 255, 255);
   color: #333;
+  border-radius: 10px;
 }
 
 .dropdown-menu a {
