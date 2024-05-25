@@ -64,18 +64,26 @@
     <main id="main-content">
       <div class="container">
         <div class="container-center">
-          <section class="post-creation">
+          <section class="post-creation" id="PostContainer">
             <span class="pp-post"></span>
             <textarea
               class="post-input"
+              id="postInput"
               placeholder="Partagez du contenu !"
             ></textarea>
 
-            <div class="post-options">
+            <div class="post-options" id="postOptions">
               <img
                 src="./assets/icons/image.svg"
                 alt="icone d'image"
                 class="icon-img"
+                id="imageIcon"
+              />
+              <input
+                type="file"
+                id="fileInput"
+                class="file-input"
+                accept="image/*,video/*"
               />
               <img
                 src="./assets/icons/gif.svg"

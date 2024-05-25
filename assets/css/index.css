@@ -7,7 +7,7 @@
 
 .container-right {
   flex: 1;
-  padding: 20px;
+  padding: 0px 20px ;
 }
 
 .container-center {
@@ -21,7 +21,7 @@
   border: 1px solid var(--cl-text);
   border-radius: 10px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 5px;
 }
 
 .post-creation,
@@ -80,26 +80,23 @@
 
 .post-input{
   width: 80%;
-  min-height: 50px;
-  height: auto;
+  min-height: 10px;
   background: transparent;
   border: none;
   color: white;
-  padding: 10px;
   resize: none;
   position: relative;
   margin-left: 30px;
   outline: none;
   overflow: hidden;
+  margin-top: 5px;
 }
 
 .pp-post{
   height: 40px;
   width: 40px;
   position: absolute;
-  left: 0;
-  top: 0;
-  margin: 20px;
+  left: 10px;
   background-color: white;
   border-radius: 50%;
 }
@@ -112,6 +109,9 @@
   border: 1px solid white;
   border-radius: 10px;
   margin-top: 5px;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
 }
 
 .post-btn:hover{
@@ -125,20 +125,18 @@
   display: inline-flex;
   gap: 5px;
   position: absolute;
-  left: 90px;
-  top: 80px;
+  margin: 20px;
+  bottom: -10px;
+  left: 55px;
 }
 
 .post-options img{
   cursor: pointer;
-  stroke: white;
-  background-color: rebeccapurple;
 }
 
-.post-options img:hover{
-  color: var(--cl-title);
+.file-input {
+  display: none;
 }
-
 
 
 @media screen and (max-width: 870px) {
