@@ -89,7 +89,7 @@
   margin-left: 30px;
   outline: none;
   overflow: hidden;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .pp-post{
@@ -104,21 +104,20 @@
 .post-btn{
   all: unset;
   padding: 5px 10px;
-  background: transparent;
+  background: var(--cl-title);
   cursor: pointer;
-  border: 1px solid white;
+  border: 1px solid var(--cl-title);
   border-radius: 10px;
   margin-top: 5px;
   position: absolute;
   right: 20px;
   bottom: 10px;
+  color: var(--cl-text);
 }
 
 .post-btn:hover{
-  color: var(--cl-text);
-  background: var(--cl-title);
-  border: 1px solid var(--cl-title);
   transition: 0.3s ease;
+  opacity: 0.7;
 }
 
 .post-options{

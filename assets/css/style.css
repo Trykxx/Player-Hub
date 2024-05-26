@@ -74,6 +74,7 @@ nav {
 .dropdown-menu a:hover {
   background-color: #4564ff;
   color: var(--cl-text);
+  border-radius: 10px;
 }
 
 .nav-item:hover .dropdown-menu {

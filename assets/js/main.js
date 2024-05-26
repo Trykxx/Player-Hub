@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const textarea = document.getElementById('postInput');
     const postContainer = document.getElementById('PostContainer');
     const postOptions = document.getElementById('postOptions');
+    const postBtn = document.getElementById('postBtn');
 
     textarea.addEventListener('input', function() {
         textarea.style.height = 'auto';  // Réinitialise la hauteur pour obtenir la hauteur correcte
@@ -23,7 +24,21 @@ document.addEventListener('DOMContentLoaded', function() {
         // Ajuste la hauteur de la div parent pour éviter que le textarea n'empiète sur les boutons
         const totalHeight = textarea.scrollHeight + postOptions.offsetHeight + 20; // 20 est un padding supplémentaire
         postContainer.style.height = totalHeight + 'px';
+
+        // Vérifiez si le textarea est vide et ajustez l'opacité du bouton
+        if (textarea.value.trim() === '') {
+            postBtn.style.opacity = '0.5';
+        } else {
+            postBtn.style.opacity = '1';
+        }
     });
+
+    // Initialise l'opacité du bouton au chargement de la page
+    if (textarea.value.trim() === '') {
+        postBtn.style.opacity = '0.5';
+    } else {
+        postBtn.style.opacity = '1';
+    }
 });
 
 // Importer des images et fichiers
