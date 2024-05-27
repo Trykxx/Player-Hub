@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         textarea.style.height = (textarea.scrollHeight) + 'px'; // Définit la hauteur selon le contenu
 
         // Ajuste la hauteur de la div parent pour éviter que le textarea n'empiète sur les boutons
-        const totalHeight = textarea.scrollHeight + postOptions.offsetHeight + 20; // 20 est un padding supplémentaire
+        const totalHeight = textarea.scrollHeight + postOptions.offsetHeight + 50; // 20 est un padding supplémentaire
         postContainer.style.height = totalHeight + 'px';
 
         // Vérifiez si le textarea est vide et ajustez l'opacité du bouton

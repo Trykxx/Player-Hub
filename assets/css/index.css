@@ -35,6 +35,7 @@
 .post-creation {
   min-height: 100px;
   position: relative;
+  padding: 10px;
 }
 
 .time-line {
