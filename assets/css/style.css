@@ -12,7 +12,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
-}
+} */
 
 header {
   width: 100%;
@@ -24,7 +24,7 @@ header {
   gap: 30px;
 }
 
-nav {
+ nav {
   display: flex;
   gap: 30px;
   align-items: center;
