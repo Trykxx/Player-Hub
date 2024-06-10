@@ -31,6 +31,10 @@ header {
   margin: auto;
 }
 
+nav svg{
+  stroke: white;
+}
+
 .navbar a,
 .nav-item {
   transition: background-color 0.3s ease, color 0.3s ease;
