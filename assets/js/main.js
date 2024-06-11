@@ -3,12 +3,12 @@ const connexionBtnTarget = document.querySelector("#connexion-btn");
 const divConnexionTarget = document.querySelector("#connexion-container");
 const mainContent = document.querySelector("#main-content");
 
-connexionBtnTarget.addEventListener("click", function (e) {
-  e.preventDefault();
-  divConnexionTarget.classList.toggle("visible");
-  divConnexionTarget.classList.toggle("hidden");
-  mainContent.classList.toggle("blur");
-});
+// connexionBtnTarget.addEventListener("click", function (e) {
+//   e.preventDefault();
+//   divConnexionTarget.classList.toggle("visible");
+//   divConnexionTarget.classList.toggle("hidden");
+//   mainContent.classList.toggle("blur");
+// });
 
 // Ajustement hauteur textarea
 document.addEventListener('DOMContentLoaded', function() {
@@ -47,10 +47,10 @@ document.getElementById('imageIcon').addEventListener('click', function() {
 });
 
 // Gérer le fichier sélectionné
-document.getElementById('fileInput').addEventListener('change', function(event) {
-    const file = event.target.files[0];
-    if (file) {
-        // Vous pouvez maintenant traiter le fichier ici (par exemple, afficher un aperçu ou télécharger)
-        console.log('Fichier sélectionné:', file.name);
-    }
-});
+// document.getElementById('fileInput').addEventListener('change', function(event) {
+//     const file = event.target.files[0];
+//     if (file) {
+//         // Vous pouvez maintenant traiter le fichier ici (par exemple, afficher un aperçu ou télécharger)
+//         console.log('Fichier sélectionné:', file.name);
+//     }
+// });

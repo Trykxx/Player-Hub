@@ -3,18 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Messages - Player Hub</title>
+    <title>Connexion / Inscription</title>
     <link rel="shortcut icon" href="../assets/img/logo-white-mini.png" />
-    <link rel="shortcut icon" href="../assets/icons/icone.png" />
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/messages.css" />
-    <script src="../assets/js/main.js" defer></script>
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <script src="../assets/js/messages.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/connexion.css">
   </head>
   <body>
     <header>
@@ -63,14 +55,14 @@
             ><span>Forums</span></a
           >
           <!-- <div class="dropdown-menu">
-            <a href="">Call of Duty</a>
-            <a href="">Fortnite</a>
-            <a href="">Overwatch</a>
-            <a href="">EAFC 24</a>
-            <a href="./view/forums.html" class="all-forums"
-              ><span>Tous les Forums</span></a
-            >
-          </div> -->
+              <a href="">Call of Duty</a>
+              <a href="">Fortnite</a>
+              <a href="">Overwatch</a>
+              <a href="">EAFC 24</a>
+              <a href="./view/forums.html" class="all-forums"
+                ><span>Tous les Forums</span></a
+              >
+            </div> -->
         </div>
         <a href="../view/messages.html" class="nav-link"
           ><svg
@@ -126,8 +118,7 @@
             ><span>Profil</span></a
           >
           <div class="dropdown-menu" id="dropdown-menu-profil">
-            <a href="" id="connexion-btn">Connexion</a>
-            <a href="">Créer un Compte</a>
+            <a href="../view/connexion.html" id="connexion-btn">Connexion/Inscription</a>
             <a href="">Réglages</a>
             <a href="">Signets</a>
             <a href="">Déconnexion</a>
@@ -135,44 +126,25 @@
         </div>
       </nav>
     </header>
-    <main id="main-content">
-      <div class="container">
-        <section class="users-container">
-          <div class="container-header">
-            <h2>Messages</h2>
-            <div id="new-message-icon">
-              <a href=""><i class="fa-solid fa-envelope-open"></i></a>
+    <main>
+      <div class="login-container">
+        <form>
+        <h1>Connexion</h1>
+            <div class="input-group">
+                <input type="text" required>
+                <label for="">Email</label>
             </div>
-          </div>
-          <div class="search-box">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <input type="text" class="search-input" placeholder="Chercher" />
-          </div>
+            <div class="input-group">
+                <input type="password" required>
+                <label for="">Mot de passe</label>
+            </div>
+            <p>mot de passe oublié ? <a href="">Cliquez ici</a></p>
 
-          <div id="user-conv"></div>
-          <div id="user-conv"></div>
-          <div id="user-conv"></div>
-          <div id="user-conv"></div>
-          <div id="user-conv"></div>
-          <div id="user-conv"></div>
-          <div id="user-conv"></div>
-        </section>
-
-        <section id="msg-container"></section>
+            <button class="login-btn">Connexion</button>
+            <p>Vous n'avez pas encore de compte ?</p>
+            <a href="../view/inscription.html" class="register-directory">Inscrivez-vous</a>
+        </form>
       </div>
     </main>
-    <div id="connexion-container" class="connexion-container hidden">
-      <h2>Connexion</h2>
-      <a href=""><i class="fa-solid fa-xmark close-icon"></i></a>
-      <form class="connexion-form">
-        <label for="email">Email :</label>
-        <input type="text" id="email" placeholder="Votre adresse e-mail" />
-
-        <label for="password">Mot de passe :</label>
-        <input type="password" id="password" placeholder="Votre mot de passe" />
-
-        <input class="btn-submit" type="submit" value="Connectez-vous" />
-      </form>
-    </div>
   </body>
 </html>

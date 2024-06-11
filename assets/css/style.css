@@ -174,7 +174,10 @@ body {
   color: var(--cl-title);
 }
 
- @media screen and (max-width: 1050px) {
+.post-options{
+  display: inline-flex;
+}
+ @media screen and (max-width: 950px) {
   nav a span {
     display: none;
   }
