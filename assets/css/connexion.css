@@ -1,35 +1,42 @@
-*{
-    color: var(--cl-text);
+* {
+  color: var(--cl-text);
 }
-
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
-h1 {
-  color: var(--cl-title);
-  text-align: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.login-container {
+main {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/13fbc2f1-85a8-42d9-b784-8b2f13d08efd.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--bg-grey);
+}
+
+h2 {
+  color: var(--cl-title);
+}
+
+.login-container,
+.register-container {
+  display: flex;
+  flex-direction: column;
   border: 1px solid var(--cl-text);
   text-align: center;
   padding: 25px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.100);
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
 }
 
 .input-group {
@@ -45,7 +52,7 @@ h1 {
   color: var(--cl-text);
   pointer-events: none;
   transition: 0.5s;
-  
+  background: transparent;
 }
 
 .input-group input {
@@ -62,8 +69,9 @@ h1 {
 .input-group input:focus ~ label {
   top: 0;
   font-size: 12px;
-  background: var(--bg-grey);
+  background: rgba(255, 255, 255, 0.2);
   color: var(--cl-title);
+  backdrop-filter: blur(10px);
 }
 
 input:focus {
@@ -71,7 +79,8 @@ input:focus {
   border: 1px solid var(--cl-title);
 }
 
-.login-btn {
+.login-btn,
+.register-btn {
   all: unset;
   display: flex;
   margin: 20px auto 50px;
@@ -83,21 +92,47 @@ input:focus {
   color: var(--cl-text);
 }
 
-.login-btn:hover{
-    background: none;
-    transition: 0.5s;
+.login-btn:hover,
+.register-btn:hover {
+  background: none;
+  transition: 0.5s;
 }
 
-.login-container a {
-    color: var(--cl-title);
-    text-decoration: underline;
+.login-container a,
+.register-container a {
+  color: var(--cl-title);
+  text-decoration: underline;
+}
+
+.login-container a:hover,
+.register-container a:hover {
+  text-decoration: none;
 }
 
 .form-toggle-buttons {
   justify-content: center;
   margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
 }
 
-.form-toggle-buttons button{
+.form-toggle-buttons button {
+  all: unset;
   padding: 5px;
+
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: flex;
+}
+
+#btn-connexion:hover,
+#btn-inscription:hover {
+  color: var(--cl-title);
+  transition: 0.2s;
 }

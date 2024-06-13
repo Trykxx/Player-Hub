@@ -46,12 +46,3 @@ document.getElementById('imageIcon').addEventListener('click', function() {
     document.getElementById('fileInput').click();
 });
 
-// Gérer le fichier sélectionné
-// document.getElementById('fileInput').addEventListener('change', function(event) {
-//     const file = event.target.files[0];
-//     if (file) {
-//         // Vous pouvez maintenant traiter le fichier ici (par exemple, afficher un aperçu ou télécharger)
-//         console.log('Fichier sélectionné:', file.name);
-//     }
-// });
-
