@@ -29,6 +29,7 @@ h1 {
   text-align: center;
   padding: 25px;
   border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.100);
 }
 
 .input-group {
@@ -44,6 +45,7 @@ h1 {
   color: var(--cl-text);
   pointer-events: none;
   transition: 0.5s;
+  
 }
 
 .input-group input {
@@ -91,3 +93,11 @@ input:focus {
     text-decoration: underline;
 }
 
+.form-toggle-buttons {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-toggle-buttons button{
+  padding: 5px;
+}

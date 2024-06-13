@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="../assets/img/logo-white-mini.png" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/connexion.css">
+    <script src="../assets/js/main.js" defer></script>
   </head>
   <body>
     <header>
@@ -129,6 +130,10 @@
     <main>
       <div class="login-container">
         <form>
+          <div class="form-toggle-buttons">
+            <button id="btn-connexion">Connexion</button>
+            <button id="btn-inscription">Inscription</button>
+          </div>
         <h1>Connexion</h1>
             <div class="input-group">
                 <input type="text" required>
@@ -145,6 +150,27 @@
             <a href="../view/inscription.html" class="register-directory">Inscrivez-vous</a>
         </form>
       </div>
+
+      <!-- <div class="register-container" id="register-container">
+        <form>
+          <h1>Inscription</h1>
+          <div class="input-group">
+            <input type="text" required>
+            <label for="">Nom</label>
+          </div>
+          <div class="input-group">
+            <input type="email" required>
+            <label for="">Email</label>
+          </div>
+          <div class="input-group">
+            <input type="password" required>
+            <label for="">Mot de passe</label>
+          </div>
+          <button class="register-btn">Inscription</button>
+          <p>Vous avez déjà un compte ?</p>
+          <a href="../view/connexion.html" class="login-directory">Connectez-vous</a>
+        </form>
+      </div> -->
     </main>
   </body>
 </html>

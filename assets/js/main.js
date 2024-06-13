@@ -54,3 +54,4 @@ document.getElementById('imageIcon').addEventListener('click', function() {
 //         console.log('Fichier sélectionné:', file.name);
 //     }
 // });
+
