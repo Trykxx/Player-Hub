@@ -2,7 +2,7 @@
   display: flex;
   width: 70%;
   min-height: 100vh;
-  margin: auto;
+  margin: 40px auto 0px;
 }
 
 .container-right {
@@ -50,35 +50,6 @@
   min-height: 500px;
 }
 
-.search-box {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-
-.search-input {
-  padding-left: 40px;
-  height: 35px;
-  border: 1px solid var(--cl-text);
-  border-radius: 10px;
-  background: transparent;
-  color: var(--cl-text);
-  width: 100%;
-}
-
-.search-input:focus{
-  border: 1px solid var(--cl-title) !important;
-}
-
-.search-icon {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--cl-text);
-  font-size: 20px;
-}
-
 .post-input{
   width: 80%;
   min-height: 10px;
@@ -93,7 +64,7 @@
   margin-top: 10px;
 }
 
-.pp-post{
+.pp-user{
   height: 40px;
   width: 40px;
   position: absolute;
@@ -137,6 +108,35 @@
 .file-input {
   display: none;
 }
+
+.user-suggestion {
+  position: relative;
+  border: 1px solid var(--cl-text);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: var(--cl-text);
+}
+
+.user-suggestion .pp-user {
+  width: 40px; /* Taille de la photo */
+  height: 40px;
+  border-radius: 50%;
+  background-color: gray; /* Placeholder pour la photo */
+  margin-right: 10px; /* Espace entre la photo et le texte */
+}
+
+.user-suggestion .name-user {
+  margin: 0;
+  padding: 0;
+  line-height: 50px; /* Alignement vertical du texte */
+}
+
+
+
+
+
 
 @media screen and (max-width: 870px) {
   .container-right {

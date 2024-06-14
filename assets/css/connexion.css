@@ -15,8 +15,8 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/13fbc2f1-85a8-42d9-b784-8b2f13d08efd.webp");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../img/gaming-universe.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,8 +35,7 @@ h2 {
   text-align: center;
   padding: 25px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(10px);
+  background: var(--bg-grey);
 }
 
 .input-group {
@@ -68,10 +67,9 @@ h2 {
 
 .input-group input:focus ~ label {
   top: 0;
-  font-size: 12px;
-  background: rgba(255, 255, 255, 0.2);
+  font-size: 15px;
+  background: var(--bg-grey);
   color: var(--cl-title);
-  backdrop-filter: blur(10px);
 }
 
 input:focus {
