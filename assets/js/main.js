@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Importer des images et fichiers
-document.getElementById('imageIcon').addEventListener('click', function() {
-    document.getElementById('fileInput').click();
+document.querySelector('.image-icon').addEventListener('click', function() {
+    document.querySelector('.file-input').click();
 });
 
