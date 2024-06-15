@@ -7,7 +7,7 @@
 
 .container-right {
   flex: 1;
-  padding: 0px 20px ;
+  padding: 0px 20px;
 }
 
 .container-center {
@@ -21,7 +21,6 @@
   border: 1px solid var(--cl-text);
   border-radius: 10px;
   margin-bottom: 20px;
-  padding: 5px;
 }
 
 .post-creation,
@@ -30,6 +29,8 @@
 .suggestions h2 {
   text-align: center;
   color: var(--cl-title);
+  font-size: 20px;
+  padding: 5px;
 }
 
 .post-creation {
@@ -50,7 +51,7 @@
   min-height: 500px;
 }
 
-.post-input{
+.post-input {
   width: 80%;
   min-height: 10px;
   background: transparent;
@@ -64,7 +65,7 @@
   margin-top: 10px;
 }
 
-.pp-user{
+.pp-user {
   height: 40px;
   width: 40px;
   position: absolute;
@@ -73,7 +74,7 @@
   border-radius: 50%;
 }
 
-.post-btn{
+.post-btn {
   all: unset;
   padding: 5px 10px;
   background: var(--cl-title);
@@ -87,12 +88,12 @@
   color: var(--cl-text);
 }
 
-.post-btn:hover{
+.post-btn:hover {
   transition: 0.3s ease;
   opacity: 0.7;
 }
 
-.post-options{
+.post-options {
   display: inline-flex;
   gap: 5px;
   position: absolute;
@@ -101,7 +102,7 @@
   left: 55px;
 }
 
-.post-options img{
+.post-options img {
   cursor: pointer;
 }
 
@@ -114,29 +115,41 @@
   border: 1px solid var(--cl-text);
   height: 50px;
   display: flex;
+  justify-content: space-between;
+  gap: 10px;
   align-items: center;
   padding: 5px;
   color: var(--cl-text);
 }
 
-.user-suggestion .pp-user {
-  width: 40px; /* Taille de la photo */
+.user-info{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pp-user-suggestion {
   height: 40px;
+  width: 40px;
+  left: 10px;
+  background-color: white;
   border-radius: 50%;
-  background-color: gray; /* Placeholder pour la photo */
-  margin-right: 10px; /* Espace entre la photo et le texte */
 }
 
-.user-suggestion .name-user {
-  margin: 0;
-  padding: 0;
-  line-height: 50px; /* Alignement vertical du texte */
+.add-friend-btn{
+  all: unset;
+  color: var(--cl-text);
+  background: var(--cl-title);
+  border: 1px solid var(--cl-title);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-
-
-
-
+.add-friend-btn:hover{
+  background: none;
+  transition: 0.5s;
+}
 
 @media screen and (max-width: 870px) {
   .container-right {
