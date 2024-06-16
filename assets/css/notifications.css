@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--cl-text);
+}
+
+.notif-container{
+    border: 1px solid var(--cl-text);
+    border-radius: 10px;
+    min-height: 100vh;
+    width: 500px;
+    margin: 20px auto 0 ;
+}
+
+.notif-titles{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--cl-text);
+}
+
+.notif-titles span{
+    padding: 10px;
+}
+
+.notif-titles span:hover{
+    color: var(--cl-title);
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .notif-container{
+        width: 90%;
+        margin: 20px;
+    }
+}
