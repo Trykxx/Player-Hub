@@ -1,12 +1,12 @@
-const postBtn = document.querySelector("#postBtn")
-const textarea = document.querySelector("#postInput")
+// const postBtn = document.querySelector("#postBtn")
+// const textarea = document.querySelector("#postInput")
 
-postBtn.addEventListener('click',()=>{
-    let textValue = textarea.value
+// postBtn.addEventListener('click',()=>{
+//     let textValue = textarea.value
 
-    const postContainer = document.createElement('div')
-    postContainer.id='postContainer'
-})
+//     const postContainer = document.createElement('div')
+//     postContainer.id='postContainer'
+// })
 
 // if (textarea.value == '') {
 //     console.log(textarea.value);
