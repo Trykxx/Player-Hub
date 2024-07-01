@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="2024 - Amit Nicolas Roig Menda" />
     <title> Accueil - Player Hub</title>
-    <link rel="shortcut icon" href="./assets/img/logo-white-mini.png" />
+    <link rel="shortcut icon" href="../../../player-hub/assets/img/logo-white-mini.png" />
     <link rel="stylesheet" href=<?= $styleCss ?> />
     <link rel="stylesheet" href=<?= $pageCss ?> />
 
@@ -14,7 +14,6 @@
     <!-- <script src="./assets/js/post-btn.js" defer></script> -->
 </head>
 
-<body>
     <header>
         <a href="../../../player-hub/index.php">
             <img src="../../../player-hub/assets/img/logo-dark-mini.png" alt="Logo" class="logo" />
