@@ -26,7 +26,7 @@ rect:hover{
 }
 
 .container-center {
-  flex: 2;
+  flex: 2.5;
 }
 
 .post-creation,
@@ -49,7 +49,7 @@ rect:hover{
 }
 
 .post-creation {
-  min-height: 100px;
+  min-height: 120px;
   position: relative;
   padding: 10px;
 }
@@ -88,7 +88,7 @@ rect:hover{
   width: 40px;
   position: absolute;
   left: 10px;
-  background-color: var(--cl-title);
+  background-color: var(--cl-text);
   border-radius: 50%;
 }
 
@@ -195,14 +195,19 @@ rect:hover{
 }
 
 .post{
-  background: red;
-  min-height: 300px;
-  width: 100px;
+  border: 1px solid green;
+  min-height: 150px;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
 }
 
-h3{
-  color: red;
-  background-color: blue;
+.post-pp{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  background-color: var(--cl-text);
+  border-radius: 50%;
 }
 
 
