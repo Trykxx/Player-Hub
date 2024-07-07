@@ -1,48 +1,63 @@
-// TODO rendre fonctionnel sur toutes les pages autres que index.html
-const connexionBtnTarget = document.querySelector("#connexion-btn");
-const divConnexionTarget = document.querySelector("#connexion-container");
-const mainContent = document.querySelector("#main-content");
+document.addEventListener("DOMContentLoaded", function () {
+  const textarea = document.getElementById("postInput");
+  const postContainer = document.getElementById("PostContainer");
+  const postOptions = document.getElementById("postOptions");
+  const postBtn = document.getElementById("postBtn");
 
-// connexionBtnTarget.addEventListener("click", function (e) {
-//   e.preventDefault();
-//   divConnexionTarget.classList.toggle("visible");
-//   divConnexionTarget.classList.toggle("hidden");
-//   mainContent.classList.toggle("blur");
-// });
+  // Ajustement hauteur textarea
+  textarea.addEventListener("input", function () {
+    textarea.style.height = "auto";
+    textarea.style.height = textarea.scrollHeight + "px";
 
-// Ajustement hauteur textarea
-document.addEventListener('DOMContentLoaded', function() {
-    const textarea = document.getElementById('postInput');
-    const postContainer = document.getElementById('PostContainer');
-    const postOptions = document.getElementById('postOptions');
-    const postBtn = document.getElementById('postBtn');
+    const totalHeight = textarea.scrollHeight + postOptions.offsetHeight + 50;
+    postContainer.style.height = totalHeight + "px";
 
-    textarea.addEventListener('input', function() {
-        textarea.style.height = 'auto';  // Réinitialise la hauteur pour obtenir la hauteur correcte
-        textarea.style.height = (textarea.scrollHeight) + 'px'; // Définit la hauteur selon le contenu
-
-        // Ajuste la hauteur de la div parent pour éviter que le textarea n'empiète sur les boutons
-        const totalHeight = textarea.scrollHeight + postOptions.offsetHeight + 50; // 20 est un padding supplémentaire
-        postContainer.style.height = totalHeight + 'px';
-
-        // Vérifiez si le textarea est vide et ajustez l'opacité du bouton
-        if (textarea.value.trim() === '') {
-            postBtn.style.opacity = '0.5';
-        } else {
-            postBtn.style.opacity = '1';
-        }
-    });
-
-    // Initialise l'opacité du bouton au chargement de la page
-    if (textarea.value.trim() === '') {
-        postBtn.style.opacity = '0.5';
+    if (textarea.value.trim() === "") {
+      postBtn.style.opacity = "0.5";
     } else {
-        postBtn.style.opacity = '1';
+      postBtn.style.opacity = "1";
     }
+  });
+
+  // Initialise l'opacité du bouton au chargement de la page
+  if (textarea.value.trim() === "") {
+    postBtn.style.opacity = "0.5";
+  } else {
+    postBtn.style.opacity = "1";
+  }
+
+  // Importer des images et fichiers
+  document.querySelector(".image-icon").addEventListener("click", function () {
+    document.querySelector(".file-input").click();
+  });
 });
 
-// Importer des images et fichiers
-document.querySelector('.image-icon').addEventListener('click', function() {
-    document.querySelector('.file-input').click();
-});
+// Ajout d'un événement au bouton postBtn
+postBtn.addEventListener("click", function () {
 
+  const postContent = document.querySelector("#postInput").value;
+  console.log(postContent);
+  console.log("Bouton cliqué !");
+
+  var postContainer = document.createElement("div");
+  postContainer.classList.add("post");
+
+  var userInfo = document.createElement("div");
+  userInfo.classList.add("user-post-info");
+
+  var userPicture = document.createElement("span");
+  userPicture.classList.add("post-pp");
+
+  var userPseudo = document.createElement("span");
+  userPseudo.classList.add("post-pseudo");
+
+  userInfo.append(userPicture, userPseudo);
+
+  postContainer.append(userInfo);
+  console.log(postContainer);
+
+  var postText = document.createElement("p");
+  postText.classList.add("post-text");
+  postText.textContent=postContent
+  postContainer.append(postText)
+});
