@@ -32,23 +32,23 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Ajout d'un événement au bouton postBtn
+
 postBtn.addEventListener("click", function () {
 
   const postContent = document.querySelector("#postInput").value;
   console.log(postContent);
   console.log("Bouton cliqué !");
 
-  var postContainer = document.createElement("div");
+  let postContainer = document.createElement("div");
   postContainer.classList.add("post");
 
-  var userInfo = document.createElement("div");
+  let userInfo = document.createElement("div");
   userInfo.classList.add("user-post-info");
 
-  var userPicture = document.createElement("span");
+  let userPicture = document.createElement("span");
   userPicture.classList.add("post-pp");
 
-  var userPseudo = document.createElement("span");
+  let userPseudo = document.createElement("span");
   userPseudo.classList.add("post-pseudo");
 
   userInfo.append(userPicture, userPseudo);
@@ -56,8 +56,20 @@ postBtn.addEventListener("click", function () {
   postContainer.append(userInfo);
   console.log(postContainer);
 
-  var postText = document.createElement("p");
+  let postText = document.createElement("p");
   postText.classList.add("post-text");
   postText.textContent=postContent
   postContainer.append(postText)
+
+  let postActions = document.createElement("div");
+  postActions.classList.add("post-actions");
+
+  let actionLike = document.createElement("div");
+  actionLike.classList.add("action-like");
+  postActions.append(actionLike)
+
+  let likeCount = document.createElement("p");
+  likeCount.classList.add("count-like");
+  actionLike.append(likeCount)
+  console.log('maj');
 });
