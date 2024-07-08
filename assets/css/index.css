@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,7 +26,7 @@ rect:hover{
 }
 
 .container-center {
-  flex: 2;
+  flex: 2.5;
 }
 
 .post-creation,
@@ -49,7 +49,7 @@ rect:hover{
 }
 
 .post-creation {
-  min-height: 100px;
+  min-height: 120px;
   position: relative;
   padding: 10px;
 }
@@ -140,12 +140,11 @@ rect:hover{
   font-size: 14px;
 }
 
-.user-suggestion:hover{
-  background: rgba(255, 255, 255, 0.05);
-  transition: 0.5s;
+.user-suggestion:hover {
+  background: rgba(255, 255, 255, 0.02);
   cursor: pointer;
 }
-.user-info{
+.user-info {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -159,7 +158,7 @@ rect:hover{
   border-radius: 50%;
 }
 
-.add-friend-btn{
+.add-friend-btn {
   all: unset;
   color: var(--cl-text);
   background: var(--cl-title);
@@ -169,67 +168,94 @@ rect:hover{
   cursor: pointer;
 }
 
-.add-friend-btn:hover{
+.add-friend-btn:hover {
   background: none;
   transition: 0.5s;
 }
 
-.forums-trending{
+.forums-trending {
   margin-bottom: 5px;
   padding-left: 10px;
   font-size: 15px;
   padding: 5px;
 }
 
-.forum-messages{
- font-size: 10px;
+.forum-messages {
+  font-size: 10px;
 }
 
-.forums-trending:hover{
+.forums-trending:hover {
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
 }
 
-.forum-name{
+.forum-name {
   color: var(--cl-title);
 }
 
-.post{
-  background: pink;
-  min-height: 300px;
-  width: 100%;
+/* Style général pour le post */
+.post {
+  padding: 10px;
+  margin: 10px 0;
+  min-width: 600px;
+  border-top: 1px solid var(--cl-text);
+  border-bottom: 1px solid var(--cl-text);
 }
 
+.post:hover{
+  background: rgba(255, 255, 255, 0.02);
+}
 
+/* Style pour les informations de l'utilisateur */
+.user-post-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
 
+/* Style pour la photo de profil de l'utilisateur */
+.post-pp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--cl-text);
+  margin-right: 15px;
+}
 
+/* Style pour le pseudo de l'utilisateur */
+.post-pseudo {
+  font-weight: bold;
+  font-size: 18px;
+}
 
+/* Style pour le texte du post */
+.post-text {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
 
+/* Style pour les actions du post */
+.post-actions {
+  display: flex;
+  justify-content: space-evenly;
+}
 
+.action-like{
+  display: flex;
+  align-items: center;
+}
 
+.action-like p{
+  margin-left: 5px;
+  font-size: 14px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Style pour les boutons SVG */
+.post-actions svg {
+  cursor: pointer;
+  transition: fill 0.3s;
+}
 
 
 
