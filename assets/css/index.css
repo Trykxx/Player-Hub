@@ -88,7 +88,7 @@ rect:hover{
   width: 40px;
   position: absolute;
   left: 10px;
-  background-color: var(--cl-title);
+  background-color: var(--cl-text);
   border-radius: 50%;
 }
 
@@ -195,14 +195,9 @@ rect:hover{
 }
 
 .post{
-  background: red;
+  background: pink;
   min-height: 300px;
-  width: 100px;
-}
-
-h3{
-  color: red;
-  background-color: blue;
+  width: 100%;
 }
 
 
