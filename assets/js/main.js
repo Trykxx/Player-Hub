@@ -12,19 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const totalHeight = textarea.scrollHeight + postOptions.offsetHeight + 50;
     postContainer.style.height = totalHeight + "px";
 
-    if (textarea.value.trim() === "") {
-      postBtn.style.opacity = "0.5";
-    } else {
-      postBtn.style.opacity = "1";
+    function buttonState() {
+      if (textarea.value.trim() === "") {
+        postBtn.style.opacity = "0.5";
+        postBtn.disabled = true;
+        postBtn.setAttribute()
+      } else {
+        postBtn.style.opacity = "1";
+        postBtn.disabled = false;
+      }
     }
   });
-
-  // Initialise l'opacité du bouton au chargement de la page
-  if (textarea.value.trim() === "") {
-    postBtn.style.opacity = "0.5";
-  } else {
-    postBtn.style.opacity = "1";
-  }
 
   // Importer des images et fichiers
   document.querySelector(".image-icon").addEventListener("click", function () {
@@ -33,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 postBtn.addEventListener("click", function () {
-
   const postContent = document.querySelector("#postInput").value;
 
   let postContainer = document.createElement("div");
@@ -46,7 +43,7 @@ postBtn.addEventListener("click", function () {
   userPicture.classList.add("post-pp");
 
   let userPseudo = document.createElement("span");
-  userPseudo.textContent='Utilisateur'
+  userPseudo.textContent = "Utilisateur";
   userPseudo.classList.add("post-pseudo");
 
   userInfo.append(userPicture, userPseudo);
@@ -118,5 +115,5 @@ postBtn.addEventListener("click", function () {
   bookmarkSvg.appendChild(bookmarkPath);
   postActions.append(bookmarkSvg);
 
-  document.querySelector('.time-line').append(postContainer)
+  document.querySelector(".time-line").append(postContainer);
 });
