@@ -11,18 +11,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const totalHeight = textarea.scrollHeight + postOptions.offsetHeight + 50;
     postContainer.style.height = totalHeight + "px";
-
-    function buttonState() {
-      if (textarea.value.trim() === "") {
-        postBtn.style.opacity = "0.5";
-        postBtn.disabled = true;
-        postBtn.setAttribute()
-      } else {
-        postBtn.style.opacity = "1";
-        postBtn.disabled = false;
-      }
-    }
   });
+  function buttonState() {
+    if (textarea.value.trim() === "") {
+      postBtn.style.opacity = "0.5";
+      postBtn.disabled = true;
+      postBtn.setAttribute("aria-disabled", "true");
+    } else {
+      postBtn.style.opacity = "1";
+      postBtn.disabled = false;
+      postBtn.setAttribute("aria-disabled", "false");
+    }
+  }
+  textarea.addEventListener("input", buttonState);
+
+  buttonState();
 
   // Importer des images et fichiers
   document.querySelector(".image-icon").addEventListener("click", function () {
